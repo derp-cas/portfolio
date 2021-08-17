@@ -28,6 +28,11 @@ const StyledHero = styled.div`
     align-items: left;
     flex-direction: column;
     background-size: cover;
+    /* adds paralax effect to background image*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* --------------------------------------    */
 
     .container {
         max-width: 80%;

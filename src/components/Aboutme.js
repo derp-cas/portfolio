@@ -32,7 +32,7 @@ function Aboutme() {
 const StyledAboutme = styled.div`
     background-color: #28272b;
     color: white;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     align-items: left;
@@ -43,17 +43,24 @@ const StyledAboutme = styled.div`
         margin-left: 10%;
         display: flex;
         flex-direction: column;
-        background-color: yellow;
     }
     p {
         margin-top: 20%;
     }
 
     img {
-        max-width: 200px;
-        max-height: 200px;
+        max-width: 90%;
+        min-width: 600px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
     }
     .bild {
+        max-width: 75%;
+        max-height: 100%;
+        width: 75%;
+        display: flex;
+        position: relative;
     }
 `;
 
