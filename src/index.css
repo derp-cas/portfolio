@@ -3,18 +3,101 @@
     padding: 0;
     /*child container stays inside parent container */
     box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-        "Helvetica Neue", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    font-family: "Montserrat", sans-serif;
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
+}
+
+button {
+    background-color: #ff4a4a;
+    padding: 15px;
+    margin-left: 20%;
+    margin-top: 20px;
+    border: #ff4a4a solid;
+    font-weight: 600;
+    color: white;
+}
+h1 {
+    font-weight: 500;
+    font-size: clamp(25px, 4vw, 50px);
+    line-height: 88px;
+    letter-spacing: -0.02em;
+}
+
+h1::before {
+    content: "<h1>";
+    display: block;
+    font-family: Nothing You Could Do;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: clamp(16px, 1.5vw, 30px);
+    letter-spacing: 0.1em;
+}
+
+h1::after {
+    content: "</h1>";
+    display: block;
+    font-family: Nothing You Could Do;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: clamp(16px, 1.5vw, 30px);
+    letter-spacing: 0.1em;
+}
+
+h2 {
+    color: #ff4a4a;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 61px;
+    letter-spacing: -0.02em;
+}
+h2::before {
+    content: "<h2>";
+    display: block;
+    font-family: Nothing You Could Do;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: clamp(16px, 1.5vw, 30px);
+    letter-spacing: 0.1em;
+}
+h2::after {
+    content: "</h2>";
+    display: block;
+    font-family: Nothing You Could Do;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: clamp(16px, 1.5vw, 30px);
+    letter-spacing: 0.1em;
+}
+
+p::before {
+    margin-bottom: 15px;
+    content: "<p>";
+    display: block;
+    font-family: Nothing You Could Do;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: clamp(16px, 1.5vw, 30px);
+    letter-spacing: 0.1em;
+}
+
+p::after {
+    margin-top: 15px;
+    content: "</p>";
+    display: block;
+    font-family: Nothing You Could Do;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: clamp(16px, 1.5vw, 30px);
+    letter-spacing: 0.1em;
 }

@@ -7,7 +7,9 @@ function NavBar() {
             <div className="navBarTop">
                 <a href="" className="logo">
                     <img src="https://picsum.photos/150/180" alt="" />
-                    <p>Kacper Drobnicki Web Developer</p>
+                    <span>
+                        Kacper Drobnicki <br /> Web Developer
+                    </span>
                 </a>
             </div>
             <div className="buttons">
@@ -54,7 +56,7 @@ const StyledNavBar = styled.div`
             background-color: #323232;
             color: white;
             text-decoration: none;
-            border: 1px solid black;
+            border: 1px solid #ff4a4a;
             padding: 8px;
         }
     }
