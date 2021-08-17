@@ -12,13 +12,53 @@ code {
 }
 
 button {
-    background-color: #ff4a4a;
+    position: relative;
+    background-color: transparent;
     padding: 15px;
     margin-left: 20%;
     margin-top: 20px;
     border: #ff4a4a solid;
-    font-weight: 600;
+    font-weight: 700;
     color: white;
+    text-shadow: 0 0 0.8em #ff4a4a;
+    box-shadow: inset 0 0 0.45em #ff4a4a, 0 0 0.45em #ff4a4a;
+}
+
+button::before {
+    /* shadow aktiviert nicht den button */
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: #ff4a4a;
+    top: 90%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transform: perspective(0.5em) scale(1, 0.5);
+    filter: blur(1.5em);
+    opacity: 0.5;
+}
+button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em #ff4a4a;
+    opacity: 0;
+    transition: 300ms;
+}
+button:hover,
+/* focus for tab navigation */
+button:focus {
+    background: #ff4a4a;
+    color: black;
+    transition: 300ms, linear;
+}
+button:hover::after {
+    opacity: 1;
 }
 h1 {
     font-weight: 500;

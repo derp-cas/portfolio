@@ -32,7 +32,7 @@ const StyledHero = styled.div`
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    /* --------------------------------------    */
+    /* ---------------------------------------*/
 
     .container {
         max-width: 80%;
