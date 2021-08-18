@@ -56,7 +56,7 @@ const StyledAboutme = styled.div`
         bottom: 0;
     }
     .bild {
-        max-width: 75%;
+        max-width: 65%;
         max-height: 100%;
         width: 75%;
         display: flex;
