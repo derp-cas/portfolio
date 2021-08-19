@@ -52,8 +52,25 @@ const StyledSkills = styled.div`
             align-items: center;
             position: relative;
             margin-top: 10%;
+            margin-bottom: 10%;
             img {
                 max-width: 50%;
+                transition: 600ms;
+                transition-delay: 100ms;
+            }
+            img:hover {
+                cursor: pointer;
+                max-width: 70%;
+                padding: 10px;
+                box-shadow: 0 0 30px 3px #ff4a4a, inset 0 0 30px 3px #ff4a4a;
+                border-radius: 10px;
+            }
+            img::after {
+                content: "";
+                background: red;
+                display: block;
+                width: 10px;
+                height: 10px;
             }
         }
     }

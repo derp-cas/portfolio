@@ -34,8 +34,10 @@ const StyledAboutme = styled.div`
     color: white;
     width: 100%;
     height: 100vh;
+    max-height: 100vh;
+    max-width: 100%;
     display: flex;
-    align-items: left;
+    justify-content: space-between;
     padding-top: 20px;
 
     .text {
@@ -57,9 +59,7 @@ const StyledAboutme = styled.div`
     }
     .bild {
         max-width: 65%;
-        max-height: 100%;
         width: 75%;
-        display: flex;
         position: relative;
     }
 `;

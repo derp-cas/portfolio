@@ -58,9 +58,6 @@ const StyledNavBar = styled.div`
             text-decoration: none;
             border: 1px solid #ff4a4a;
             padding: 8px;
-            /* neoneffect */
-            /* text-shadow: 0 0 0.45em #ff4a4a;
-            box-shadow: inset 0 0 0.45em #ff4a4a, 0 0 0.45em #ff4a4a; */
         }
     }
     .logo {
