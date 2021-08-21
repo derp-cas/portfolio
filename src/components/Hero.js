@@ -11,9 +11,8 @@ function Hero() {
                     <br />
                     Web Developer
                 </h1>
-                <a href="">
-                    <button>Contact Me !</button>
-                </a>
+
+                <button type="button">Contact Me !</button>
             </div>
         </StyledHero>
     );
@@ -21,8 +20,9 @@ function Hero() {
 
 const StyledHero = styled.div`
     color: white;
-    width: 100%;
-    height: 100vh;
+    /* 100vw-8vw(margin left in mainjs) */
+    width: 92vw;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: left;
@@ -39,6 +39,12 @@ const StyledHero = styled.div`
         margin-left: 10%;
         display: flex;
         flex-direction: column;
+
+        button {
+            max-width: 15%;
+            min-width: 150px;
+            margin-left: 5%;
+        }
     }
 `;
 

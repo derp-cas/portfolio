@@ -51,8 +51,9 @@ function Contactme() {
 const StyledContactme = styled.div`
     background-color: #28272b;
     color: white;
-    width: 100%;
-    height: 100vh;
+    /* 100vw-8vw(margin left in mainjs) */
+    width: 92vw;
+
     display: flex;
     align-items: left;
     flex-direction: column;
@@ -87,7 +88,7 @@ const StyledContactme = styled.div`
         box-sizing: border-box;
         margin-top: 6px;
         margin-bottom: 16px;
-        resize: vertical;
+        resize: none;
     }
 
     input[type="submit"] {

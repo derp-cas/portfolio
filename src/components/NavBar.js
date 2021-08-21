@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import twitterlogo from "../assets/twitter-6.svg";
+import githublogo from "../assets/github-icon.svg";
 
 function NavBar() {
     return (
@@ -14,14 +16,14 @@ function NavBar() {
             </div>
             <div className="buttons">
                 <a href="">Home</a>
-                <a href="">About me</a>
+                <a href=""> About me</a>
                 <a href="">Skills</a>
                 <a href="">Projects</a>
                 <a href="">Contact</a>
             </div>
             <div className="socials">
-                <a href="">GIT</a>
-                <a href="">TWIT</a>
+                <a href="">{/* <img src={twitterlogo} alt="" /> */}</a>
+                <a href="">{/* <img src={githublogo} alt="" /> */}</a>
             </div>
         </StyledNavBar>
     );
@@ -30,9 +32,7 @@ function NavBar() {
 const StyledNavBar = styled.div`
     background-color: #252525;
     height: 100vh;
-    width: 150px;
-    max-width: 150px;
-    min-width: 120px;
+    width: 8vw;
     padding: 5px;
     position: fixed;
     display: flex;
@@ -52,12 +52,26 @@ const StyledNavBar = styled.div`
         text-align: center;
 
         a {
-            margin: 2px;
-            background-color: #323232;
+            height: 80%;
+            margin: 5px 2px 5px 2px;
+            background-color: transparent;
             color: white;
             text-decoration: none;
-            border: 1px solid #ff4a4a;
+            border: 2px solid #ff4a4a;
             padding: 8px;
+            text-shadow: 0 0 0.8em #ff4a4a;
+            box-shadow: inset 0 0 0.45em #ff4a4a, 0 0 0.45em #ff4a4a;
+            transition: 300ms;
+            transition-delay: 150ms;
+        }
+        a:hover,
+        a:focus {
+            cursor: pointer;
+            background: #ff4a4a;
+            color: black;
+            transition: 600ms;
+            transition-delay: 150ms;
+            box-shadow: inset 0 0 0.45em #ff4a4a, 0 0 2.6em #ff4a4a;
         }
     }
     .logo {

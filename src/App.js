@@ -11,6 +11,11 @@ function App() {
     );
 }
 
-const StyledApp = styled.div``;
+const StyledApp = styled.div`
+    display: flex;
+    /* @media (max-width: 768px) {
+        display: block;
+    } */
+`;
 
 export default App;

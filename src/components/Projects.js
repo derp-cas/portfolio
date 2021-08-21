@@ -3,10 +3,15 @@ import styled from "styled-components";
 import background from "../assets/proback.png";
 import exquid from "../assets/LogoVec.svg";
 import iwo from "../assets/iwofurniture.png";
+import sample from "../assets/Vortex.mp4";
 
 function Projects() {
     return (
+        // <StyledProject>
         <StyledProject style={{ backgroundImage: `url(${background})` }}>
+            {/* <video className="videoTag" autoPlay loop muted>
+                <source src={sample} type="video/mp4" />
+            </video> */}
             <h2>"Projects"</h2>
             <div className="container">
                 <div className="Projects">
@@ -19,12 +24,14 @@ function Projects() {
 }
 
 const StyledProject = styled.div`
-    width: 100%;
-    height: 100vh;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* 100vw-8vw(margin left in mainjs) */
+    width: 92vw;
 
+    video {
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+    }
     h2 {
         margin-left: 10%;
         padding-top: 5%;
@@ -41,7 +48,7 @@ const StyledProject = styled.div`
             width: 100%;
             display: grid;
             grid-template-columns: 15% 15% 15% 15%;
-            grid-row-gap: 2em;
+            grid-row-gap: 5%;
             grid-column-gap: 10%;
             justify-items: center;
             align-items: center;

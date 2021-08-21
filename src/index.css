@@ -4,6 +4,7 @@
     /*child container stays inside parent container */
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
 }
 
 code {
@@ -15,8 +16,7 @@ button {
     position: relative;
     background-color: transparent;
     padding: 15px;
-    margin-left: 20%;
-    margin-top: 20px;
+
     border: #ff4a4a solid;
     font-weight: 700;
     color: white;
@@ -144,31 +144,6 @@ p::after {
     margin-top: 15px;
     content: "</p>";
     display: block;
-    font-family: Nothing You Could Do;
-    font-style: normal;
-    font-weight: normal;
-    color: rgba(255, 255, 255, 0.5);
-    font-size: clamp(16px, 1.5vw, 30px);
-    letter-spacing: 0.1em;
-}
-.logos::before {
-    position: absolute;
-    left: 0;
-    top: -20px;
-    content: "<container>";
-    font-family: Nothing You Could Do;
-    font-style: normal;
-    font-weight: normal;
-    color: rgba(255, 255, 255, 0.5);
-    font-size: clamp(16px, 1.5vw, 30px);
-    letter-spacing: 0.1em;
-}
-
-.logos::after {
-    position: absolute;
-    left: 0;
-    bottom: -45px;
-    content: "</container>";
     font-family: Nothing You Could Do;
     font-style: normal;
     font-weight: normal;

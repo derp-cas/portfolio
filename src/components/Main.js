@@ -19,7 +19,7 @@ function Main() {
 }
 
 const StyledMain = styled.div`
-    margin-left: 150px;
+    margin-left: 8vw;
 `;
 
 export default Main;

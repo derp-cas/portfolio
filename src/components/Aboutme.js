@@ -22,7 +22,7 @@ function Aboutme() {
                     mollitia. Cupiditate architecto id culpa dolore!
                 </p>
             </div>
-            <div className="bild">
+            <div className="pic">
                 <img src={kacper} alt="" />
             </div>
         </StyledAboutme>
@@ -32,35 +32,32 @@ function Aboutme() {
 const StyledAboutme = styled.div`
     background-color: #28272b;
     color: white;
-    width: 100%;
-    height: 100vh;
-    max-height: 100vh;
-    max-width: 100%;
+    /* 100vw-8vw(margin left in mainjs) */
+    width: 92vw;
     display: flex;
-    justify-content: space-between;
     padding-top: 20px;
+    justify-content: space-between;
 
     .text {
         max-width: 35%;
+        min-width: 300px;
+        max-height: 100%;
         margin-left: 10%;
-        display: flex;
-        flex-direction: column;
+        box-sizing: border-box;
     }
     p {
         margin-top: 20%;
+        line-height: 1.6;
+        letter-spacing: 1px;
     }
+    .pic {
+        /* background-color: tomato; */
+        max-width: 50vw;
 
-    img {
-        max-width: 90%;
-        min-width: 600px;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
-    .bild {
-        max-width: 65%;
-        width: 75%;
-        position: relative;
+        img {
+            max-width: 100%;
+            min-width: 600px;
+        }
     }
 `;
 
