@@ -1,3 +1,5 @@
+// Route renders out component based on url
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import styled from "styled-components";
 import Main from "./components/Main";
@@ -5,8 +7,12 @@ import Main from "./components/Main";
 function App() {
     return (
         <StyledApp>
-            <NavBar />
-            <Main />
+            <Router>
+                <NavBar />
+                {/* <Route path="/skills" component={Skills}></Route> */}
+
+                <Main />
+            </Router>
         </StyledApp>
     );
 }

@@ -1,7 +1,8 @@
-import React from "react";
+import React, { Component, useRef, useEffect } from "react";
 import styled from "styled-components";
 import twitterlogo from "../assets/twitter-6.svg";
 import githublogo from "../assets/github-icon.svg";
+import { Link } from "react-router-dom";
 
 function NavBar() {
     return (
@@ -15,11 +16,11 @@ function NavBar() {
                 </a>
             </div>
             <div className="buttons">
-                <a href="">Home</a>
-                <a href=""> About me</a>
-                <a href="">Skills</a>
-                <a href="">Projects</a>
-                <a href="">Contact</a>
+                <Link to="/home">Home</Link>
+                <Link to="/aboutme">About me</Link>{" "}
+                <Link to="/skills">Skills</Link>{" "}
+                <Link to="/projects"> Projects</Link>{" "}
+                <Link to="contact">Contact</Link>{" "}
             </div>
             <div className="socials">
                 <a href="">{/* <img src={twitterlogo} alt="" /> */}</a>
