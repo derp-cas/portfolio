@@ -11,7 +11,7 @@ import VSCodeLogo from "../assets/visual-studio-code-1.svg";
 
 function Skills() {
     return (
-        <StyledSkills>
+        <StyledSkills id="skills">
             <div className="container">
                 <h2>"Skills"</h2>
                 <div className="logos">

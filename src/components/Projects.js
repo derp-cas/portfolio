@@ -8,7 +8,10 @@ import sample from "../assets/Vortex.mp4";
 function Projects() {
     return (
         // <StyledProject>
-        <StyledProject style={{ backgroundImage: `url(${background})` }}>
+        <StyledProject
+            id="projects"
+            style={{ backgroundImage: `url(${background})` }}
+        >
             {/* <video className="videoTag" autoPlay loop muted>
                 <source src={sample} type="video/mp4" />
             </video> */}

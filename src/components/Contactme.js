@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 function Contactme() {
     return (
-        <StyledContactme>
+        <StyledContactme id="contact">
             <div className="container">
                 <h2>"Contact Me!"</h2>
                 <form className="contact" autoComplete="off">

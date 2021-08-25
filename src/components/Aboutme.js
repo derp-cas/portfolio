@@ -4,7 +4,7 @@ import kacper from "../assets/TpBackground.png";
 
 function Aboutme() {
     return (
-        <StyledAboutme>
+        <StyledAboutme id="aboutme">
             <div className="text">
                 <h2>"About me"</h2>
                 <p>

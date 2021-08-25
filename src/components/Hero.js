@@ -1,18 +1,27 @@
 import React from "react";
 import styled from "styled-components";
 import background from "../assets/landingpagebg.jpg";
+import { Link } from "react-scroll";
 
 function Hero() {
     return (
-        <StyledHero style={{ backgroundImage: `url(${background})` }}>
+        <StyledHero id="home" style={{ backgroundImage: `url(${background})` }}>
             <div className="container">
                 <h1>
                     Hi, ich bin Kacper Drobnicki,
                     <br />
                     Web Developer
                 </h1>
-
-                <button type="button">Contact Me !</button>
+                <Link
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                >
+                    <button type="button">Contact Me !</button>
+                </Link>
             </div>
         </StyledHero>
     );

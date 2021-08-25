@@ -2,7 +2,7 @@ import React, { Component, useRef, useEffect } from "react";
 import styled from "styled-components";
 import twitterlogo from "../assets/twitter-6.svg";
 import githublogo from "../assets/github-icon.svg";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 function NavBar() {
     return (
@@ -16,11 +16,56 @@ function NavBar() {
                 </a>
             </div>
             <div className="buttons">
-                <Link to="/home">Home</Link>
-                <Link to="/aboutme">About me</Link>{" "}
-                <Link to="/skills">Skills</Link>{" "}
-                <Link to="/projects"> Projects</Link>{" "}
-                <Link to="contact">Contact</Link>{" "}
+                <Link
+                    activeClass="active"
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={200}
+                >
+                    Home
+                </Link>
+                <Link
+                    activeClass="active"
+                    to="aboutme"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={200}
+                >
+                    About me
+                </Link>
+                <Link
+                    activeClass="active"
+                    to="skills"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={200}
+                >
+                    Skills
+                </Link>
+                <Link
+                    activeClass="active"
+                    to="projects"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={200}
+                >
+                    Projects
+                </Link>
+                <Link
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={200}
+                >
+                    Contact
+                </Link>
             </div>
             <div className="socials">
                 <a href="">{/* <img src={twitterlogo} alt="" /> */}</a>
@@ -45,6 +90,9 @@ const StyledNavBar = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+    .buttons > .active {
+        border-bottom: 5px solid red;
     }
     .buttons {
         display: flex;
